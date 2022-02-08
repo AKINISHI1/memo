@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>ANNS</title>
+    <link rel="stylesheet" href="/css/style.css">
+  </head>
+  <body>
+    <header>
+      <a href="/" class="header-logo">ANNS</a>
+    </header>
+    <div class="container">
+      <div class="container-header">
+        <h1>欲しいものを書き込む</h1>
+      </div>
+      <div class="item-form-wrapper">
+        <p class="form-label">何が必要ですか？</p>
+        <form action='/create' method='POST'>
+          <input name = "listName" type="text">
+          <input type="submit" value="作成する">
+        </form>
+      </div>
+      <a href="/index" class="cancel-button">もどる</a>
+    </div>
+  </body>
+</html>

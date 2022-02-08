@@ -1,0 +1,16 @@
+<header>
+    <div class="header-nav">
+      <a href="/">anns</a>
+      <p>ようこそ、<%= locals.user_name %>さん</p>
+      <ul>
+        <li><a href="/list">記事一覧</a></li>
+        <% if(locals.isLoggedIn){ %> 
+            <li><a href="/logout">ログアウト</a></li>
+        <% }else{ %> 
+          <li><a href="/signup">新規登録</a></li>
+          <li><a href="/login">ログイン</a></li>
+        <% } %> 
+      </ul>
+    </div>
+    <p>記事一覧</p>
+  </header>
